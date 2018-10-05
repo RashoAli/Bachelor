@@ -143,11 +143,11 @@ def finger(img):
     temp, img22 = finger_color(img_gray, (x1, y1), (x2, y2), img22, (255, 0, 255))
     fingers[:, :, 4] = temp
 
-    plt.imshow(img22)
-    plt.show()
-
     return img22
 
 
 img = Image.open('hand.jpg')
 img2 = finger(img)
+
+plt.imshow(img2)
+plt.show()
