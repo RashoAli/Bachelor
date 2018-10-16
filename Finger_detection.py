@@ -8,7 +8,8 @@ Created on Thu Sep 27 16:29:05 2018
 import cv2
 import sys
 import os
-from PIL import Image
+import PIL
+from PIL import Image, ImageDraw, PILLOW_VERSION
 import numpy as np
 from matplotlib import pyplot as plt
 
